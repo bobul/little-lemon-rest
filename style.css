@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Markazi Text';
+    src: url(./fonts/MarkaziText-Regular.ttf);
+}
+    
+body{
+    background-color: aliceblue;
+    margin: 1.5rem 10% 3rem 10%;
+    font-family: 'Markazi Text', serif;
+    font-size: 1.3rem;
+}
+h1{
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+header > .logo{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    background-color: #333333;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    padding-inline-start: 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0.25rem;
+}
+nav ul li a{
+    color: #EDEFEE;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul li a:active{
+    text-decoration: underline;
+}
+section article ul{
+    list-style: none;
+}
+section article img{
+    max-width: 100%;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 1rem; 
+}
+@media (max-width: 600px) {
+    section{
+        flex-direction: column;
+    }
+    footer img{
+        max-width: 50%;
+    }
+}
+section article{
+    flex: 1;
+}
+
+.item{
+    background-color: peachpuff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.discount{
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.350), rgba(0,0,0,0.375))
+                       , url(./img/pasta-con-peperoni.jpg);
+    background-size: cover;
+    background-position: 30%;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.75rem;
+}
+.discount p{
+    max-width: 75%;
+}
+footer{
+    margin: 1rem;
+    display: flex;
+    gap: 2rem 1rem;
+}
+footer div{
+    flex: 1;
+}
+footer div img{
+    max-width: 3rem;
+}
+footer div p{
+    border-top: #333333;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    text-align: right;
+    /* margin-left: auto; */
+}
